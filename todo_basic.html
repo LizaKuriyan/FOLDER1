@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <ul>
+        <li></li>
+    </ul>
+</head>
+<body>
+    <p id="id1"></p>
+    ENTER NAME<input type="text" name="fname" id="name">
+    SELECT DATE<input type="date" name="day" id="date">
+    <button id="btn">SUBMIT</button>
+    <ul id="list"></ul>
+    <script>
+       let d1=document.getElementById("name");
+       let d2=document.getElementById("date");
+       let butn=document.getElementById("btn");
+       let li=document.getElementById("list");
+
+       butn.addEventListener("click",function()
+           {
+              list1 =document.createElement("li");
+              list2 = document.createElement("li");
+
+              list1.textContent=d1.value;
+              list2.textContent=d2.value;
+
+              list.appendChild(list1);
+              list.appendChild(list2);
+           });
+    </script>
+</body>
+</html>
